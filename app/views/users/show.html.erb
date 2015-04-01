@@ -1,0 +1,8 @@
+<div class="container">
+	<h1>user</h1>
+	first name: <%= @user.first_name %><br>
+	last name: <%= @user.last_name %><br>
+	email: <%= @user.email_address %><br>
+	<a href="/users/edit/<%= @user.id %>">edit</a> | 
+	<a href="/">back</a>
+</div>

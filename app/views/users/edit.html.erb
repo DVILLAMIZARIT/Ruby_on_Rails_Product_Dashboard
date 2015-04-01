@@ -1,0 +1,9 @@
+<div class="container">
+	<h1>edit</h1>
+	<%= simple_form_for @user do |f| %>
+		<%= f.input :first_name, :placeholder => @user.first_name %>
+		<%= f.input :last_name, :placeholder => @user.last_name %>
+		<%= f.input :email_address, :placeholder => @user.email_address %>
+		<%= f.submit :submit %>
+	<% end %>
+</div>

@@ -1,0 +1,13 @@
+<div class="container">
+	<div class="row">
+		<h1>add new</h1>
+		<%= simple_form_for @user do |f| %>
+			<%= f.input :first_name %>
+			<%= f.input :last_name %>
+			<%= f.input :email_address %>
+			<%= f.input :password %>
+			<%= f.button :submit %>
+		<% end %>
+	</div>
+</div>
+

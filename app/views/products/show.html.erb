@@ -1,0 +1,14 @@
+<div class="container">
+	<h1>product deets</h1>
+	<%= @product.name %><br>
+	<%= @product.description %><br>
+	<%= @product.price %><br>
+	<%= @category %><br>
+	<form action="/comments" method="post">
+		<input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+		<input name="comment[product_id]" value="<%= @product.id %>" type="hidden">
+		<input name="comment[comment]" type="text">
+		<input type="submit" value="submit">
+	</form>
+	<a href="/products">GO BACK</a>
+</div>

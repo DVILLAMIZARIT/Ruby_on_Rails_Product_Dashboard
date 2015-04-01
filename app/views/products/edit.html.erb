@@ -1,0 +1,10 @@
+<div class="container">
+	<h1>edit</h1>
+	<%= simple_form_for @product do |f| %>
+		<%= f.input :name, :placeholder => @product.name %>
+		<%= f.input :description, :placeholder => @product.description %>
+		<%= f.input :price, :placeholder => @product.price %> 
+		<%= f.association :category %>
+		<%= f.submit :submit %>
+	<% end %>
+</div>
